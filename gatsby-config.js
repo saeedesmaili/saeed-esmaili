@@ -1,14 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Saeed Esmaili, Data Nerd`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Saeed Esmaili`,
+      summary: `who is a data professional, and enjoys playing with, analysing and talking about data.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Interesting stuff about what we can find out using data.`,
+    siteUrl: `https://saeedesmaili.gtsb.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `saeedesmaili`,
+      linkedin: `https://www.linkedin.com/in/saeedesmaili/`,
+      email: `me@saeedesmaili.com`
     },
   },
   plugins: [
