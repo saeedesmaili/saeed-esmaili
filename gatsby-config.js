@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: `https://saeedesmaili.gtsb.io/`,
     social: {
       twitter: `saeedesmaili`,
-      linkedin: `https://www.linkedin.com/in/saeedesmaili/`,
+      linkedin: `saeedesmaili`,
       email: `me@saeedesmaili.com`
     },
   },
