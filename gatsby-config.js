@@ -10,7 +10,8 @@ module.exports = {
     social: {
       twitter: `saeedesmaili`,
       linkedin: `saeedesmaili`,
-      email: `me@saeedesmaili.com`
+      email: `me@saeedesmaili.com`,
+      github: `saeedesmaili`
     },
   },
   plugins: [
