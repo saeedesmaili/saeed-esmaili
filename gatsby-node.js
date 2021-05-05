@@ -1,8 +1,10 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
+const locales = require('./src/components/locales')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
+  const { createPage, deletePage } = actions
+  console.log(locales)
 
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)

@@ -8,7 +8,6 @@ import Seo from "../components/seo"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
-  const langKey = this.props.pageContext.langKey
 
   if (posts.length === 0) {
     return (
@@ -67,14 +66,13 @@ const BlogIndex = ({ data, location }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query($langKey: String!) {
+  query {
     site {
       siteMetadata {
         title
       }
     }
     allMarkdownRemark(
-      filter: { fields: { langKey: { eq: $langKey } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {
