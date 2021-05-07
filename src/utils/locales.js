@@ -10,6 +10,12 @@ module.exports = {
         summary: ' who is a data professional, and enjoys playing with, analysing and talking about data.'
       },
       writtenBy: "Written by",
+      otherBlog: "persian posts",
+      email: "email",
+      twitter: "twitter",
+      github: "github",
+      linkedin: "linkedin",
+      rss: "rss",
       description: 'test'
       
     },
@@ -23,6 +29,12 @@ module.exports = {
         summary: '، دیتا آنالیست دیوار.'
       },
       writtenBy: 'نوشته‌های',
+      otherBlog: "نوشته‌های انگلیسی",
+      email: "ایمیل",
+      twitter: "توییتر",
+      github: "گیت‌هاب",
+      linkedin: "لینکدین",
+      rss: "فید",
       description: 'تست'
     }
   }

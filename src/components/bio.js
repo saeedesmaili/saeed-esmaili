@@ -6,12 +6,14 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
+const locales = require('../utils/locales')
 
-const Bio = ({ blogAuthor, writtenBy }) => {
+
+const Bio = ({ blogAuthor, writtenBy, isRoot, langKey }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -35,8 +37,6 @@ const Bio = ({ blogAuthor, writtenBy }) => {
   const author = blogAuthor || data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
-  console.log(blogAuthor)
-
   return (
     <div className="bio">
       <StaticImage
@@ -54,10 +54,11 @@ const Bio = ({ blogAuthor, writtenBy }) => {
           {writtenBy} <strong>{author.name}</strong>{author?.summary || null}
           {` `}
           <br/>
-          <a href={`mailto:${social?.email || ``}`}>email</a>{' '}&bull;{' '}
-          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank" rel="noopener noreferrer">twitter</a>{' '}&bull;{' '}
-          <a href={`https://github.com/${social?.github || ``}`} target="_blank" rel="noopener noreferrer">github</a>{' '}&bull;{' '}
-          <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} target="_blank" rel="noopener noreferrer">linkedin</a>
+          <Link to={isRoot ? "/fa/" : "/"}>{locales[langKey].otherBlog}</Link>{' '}&bull;{' '}
+          <a href={`mailto:${social?.email || ``}`}>{locales[langKey].email}</a>{' '}&bull;{' '}
+          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].twitter}</a>{' '}&bull;{' '}
+          <a href={`https://github.com/${social?.github || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].github}</a>{' '}&bull;{' '}
+          <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].linkedin}</a>
         </p>
       )}
     </div>
@@ -67,6 +68,8 @@ const Bio = ({ blogAuthor, writtenBy }) => {
 Bio.propTypes = {
   blogAuthor: PropTypes.arrayOf(PropTypes.object),
   writtenBy: PropTypes.string,
+  isRoot: PropTypes.bool,
+  langKey: PropTypes.bool,
 }
 
 export default Bio

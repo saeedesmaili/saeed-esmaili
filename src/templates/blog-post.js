@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
   console.log(langKey)
 
   return (
-    <Layout location={location} title={locales[langKey].siteTitle}>
+    <Layout location={location} title={locales[langKey].siteTitle} langKey={langKey}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -41,6 +41,8 @@ const BlogPostTemplate = ({ data, location }) => {
           <Bio 
             blogAuthor={locales[langKey].blogAuthor}
             writtenBy={locales[langKey].writtenBy}
+            isRoot={langKey === "en" ? true : false}
+            langKey={langKey} 
           />
         </footer>
       </article>

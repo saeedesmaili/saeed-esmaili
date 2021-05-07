@@ -5,8 +5,10 @@ import get from 'lodash/get';
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { formatPostDate, formatReadingTime } from '../utils/helpers';
 
 const locales = require('../utils/locales')
+
 
 
 class BlogIndexTemplate extends React.Component {
@@ -20,15 +22,17 @@ class BlogIndexTemplate extends React.Component {
 
     const posts = get(this, 'props.data.allMarkdownRemark.nodes');
     return (
-      <Layout location={this.props.location} title={locales[langKey].siteTitle}>
+      <Layout location={this.props.location} title={locales[langKey].siteTitle} langKey={langKey}>
        <Seo 
         title={locales[langKey].homeTitle}
         description={locales[langKey].description}
-        lang={langKey} 
+        lang={langKey}
        />
        <Bio 
         blogAuthor={locales[langKey].blogAuthor}
         writtenBy={locales[langKey].writtenBy}
+        isRoot={langKey === "en" ? true : false}
+        langKey={langKey}
        />
        <ol style={{ listStyle: `none` }}>
          {posts.map(post => {
@@ -47,7 +51,10 @@ class BlogIndexTemplate extends React.Component {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
+                  <small>
+                    {formatPostDate(post.frontmatter.date, langKey)}
+                    
+                  </small>
                 </header>
                 <section>
                   <p
