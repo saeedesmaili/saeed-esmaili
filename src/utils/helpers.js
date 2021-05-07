@@ -1,5 +1,7 @@
 
-export function formatReadingTime(minutes) {
+const locales = require('../utils/locales')
+
+export function formatReadingTime(minutes, langKey) {
     let cups = Math.round(minutes / 5);
     let bowls = 0;
     if (cups > 5) {
@@ -7,7 +9,7 @@ export function formatReadingTime(minutes) {
         .fill('🍱')
         .join('')} ${minutes} min read`;
     } else {
-        return `${new Array(cups || 1).fill('☕️').join('')} ${minutes} min read`;
+        return `${new Array(cups || 1).fill('☕️').join('')} ${minutes} ${locales[langKey].minsRead}`;
     }
 }
   

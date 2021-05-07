@@ -4,6 +4,8 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { formatPostDate, formatReadingTime } from '../utils/helpers';
+
 
 const locales = require('../utils/locales')
 
@@ -12,9 +14,6 @@ const BlogPostTemplate = ({ data, location }) => {
   const langKey = post.fields.langKey
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-
-  console.log("langKey")
-  console.log(langKey)
 
   return (
     <Layout location={location} title={locales[langKey].siteTitle} langKey={langKey}>
@@ -30,7 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <small>{formatPostDate(post.frontmatter.date, langKey)}{` • ${formatReadingTime(post.timeToRead, langKey)}`}</small>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -76,6 +75,7 @@ export const pageQuery = graphql`
         slug
         langKey
       }
+      timeToRead
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {

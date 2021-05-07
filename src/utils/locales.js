@@ -16,6 +16,7 @@ module.exports = {
       github: "github",
       linkedin: "linkedin",
       rss: "rss",
+      minsRead: "mins read",
       description: 'test'
       
     },
@@ -35,6 +36,7 @@ module.exports = {
       github: "گیت‌هاب",
       linkedin: "لینکدین",
       rss: "فید",
+      minsRead: "دقیقه",
       description: 'تست'
     }
   }

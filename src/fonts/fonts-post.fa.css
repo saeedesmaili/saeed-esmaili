@@ -1,10 +1,10 @@
 @font-face {
     font-family: Vazir;
-    src: url('./files/Vazir.eot');
-    src: url('./files/Vazir.eot?#iefix') format('embedded-opentype'),
-        url('./files/Vazir.woff2') format('woff2'),
-        url('./files/Vazir.woff') format('woff'),
-        url('./files/Vazir.ttf') format('truetype');
+    src: url('./files/Vazir-Regular.eot');
+    src: url('./files/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./files/Vazir-Regular.woff2') format('woff2'),
+        url('./files/Vazir-Regular.woff') format('woff'),
+        url('./files/Vazir-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,6 +15,16 @@
         url('./files/Vazir-Bold.woff2') format('woff2'),
         url('./files/Vazir-Bold.woff') format('woff'),
         url('./files/Vazir-Bold.ttf') format('truetype');
-    font-weight: bold;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('./files/Vazir-Black.eot');
+    src: url('./files/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+        url('./files/Vazir-Black.woff2') format('woff2'),
+        url('./files/Vazir-Black.woff') format('woff'),
+        url('./files/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }

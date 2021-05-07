@@ -53,7 +53,7 @@ class BlogIndexTemplate extends React.Component {
                   </h2>
                   <small>
                     {formatPostDate(post.frontmatter.date, langKey)}
-                    
+                    {` • ${formatReadingTime(post.timeToRead, langKey)}`}
                   </small>
                 </header>
                 <section>
@@ -93,6 +93,7 @@ export const pageQuery = graphql`
         fields {
           slug
         }
+        timeToRead
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
           title

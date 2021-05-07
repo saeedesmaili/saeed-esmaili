@@ -157,6 +157,10 @@ h6 > a {
   color: inherit;
 }
 
+article section {
+  margin-top: var(--spacing-5);
+}
+
 /* Prose */
 
 p {
@@ -367,6 +371,6 @@ body:lang(fa) blockquote {
 
 /* styles for Persian language */
 body:lang(fa) .post-content,
-body:lang(fa) h1, body:lang(fa) h2, body:lang(fa) .header-link-home {
+body:lang(fa) h1, body:lang(fa) h2, body:lang(fa) .header-link-home, body:lang(fa) .blog-post header p {
   font-family: 'Vazir';
 }
