@@ -6,17 +6,30 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+const locales = require('../utils/locales')
+
+
 class BlogIndexTemplate extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
     const langKey = this.props.pageContext.langKey;
     console.log(this.props)
 
+    if (langKey == 'fa') {
+      import('../fonts/fonts-post.fa.css')
+    }
+
     const posts = get(this, 'props.data.allMarkdownRemark.nodes');
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-       <Seo title="Home" />
-       <Bio />
+      <Layout location={this.props.location} title={locales[langKey].siteTitle}>
+       <Seo 
+        title={locales[langKey].homeTitle}
+        description={locales[langKey].description}
+        lang={langKey} 
+       />
+       <Bio 
+        blogAuthor={locales[langKey].blogAuthor}
+        writtenBy={locales[langKey].writtenBy}
+       />
        <ol style={{ listStyle: `none` }}>
          {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug

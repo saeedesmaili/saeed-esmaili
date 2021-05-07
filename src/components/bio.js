@@ -8,9 +8,10 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import PropTypes from "prop-types"
 
 
-const Bio = () => {
+const Bio = ({ blogAuthor, writtenBy }) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       site {
@@ -31,8 +32,10 @@ const Bio = () => {
   `)
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
+  const author = blogAuthor || data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+
+  console.log(blogAuthor)
 
   return (
     <div className="bio">
@@ -48,7 +51,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          {writtenBy} <strong>{author.name}</strong>{author?.summary || null}
           {` `}
           <br/>
           <a href={`mailto:${social?.email || ``}`}>email</a>{' '}&bull;{' '}
@@ -59,6 +62,11 @@ const Bio = () => {
       )}
     </div>
   )
+}
+
+Bio.propTypes = {
+  blogAuthor: PropTypes.arrayOf(PropTypes.object),
+  writtenBy: PropTypes.string,
 }
 
 export default Bio

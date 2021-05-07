@@ -1,6 +1,6 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const locales = require('./src/components/locales')
+const locales = require('./src/utils/locales')
 const { supportedLanguages } = require('./i18n')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {

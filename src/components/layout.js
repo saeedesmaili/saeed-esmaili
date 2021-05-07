@@ -2,22 +2,22 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const rootPaths = [`${__PATH_PREFIX__}/`, `${__PATH_PREFIX__}/fa/`, `${__PATH_PREFIX__}/fa`]
+  const isRootPath = rootPaths.includes(location.pathname)
   let header
 
   if (isRootPath) {
     header = (
       <h1 className="main-heading">
-        <Link to="/">{title}</Link>
+        <Link to={location.pathname}>{title}</Link>
       </h1>
     )
-  } else {
+  } else if (location.pathname.includes("/fa/")) {
     header = (
-      <Link className="header-link-home" to="/">
-        {title}
-      </Link>
+      <Link className="header-link-home" to="/fa/">{title}</Link>
     )
+  } else {
+    <Link className="header-link-home" to="/">{title}</Link>
   }
 
   return (

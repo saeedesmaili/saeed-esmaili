@@ -5,16 +5,23 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+const locales = require('../utils/locales')
+
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
+  const langKey = post.fields.langKey
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  console.log("langKey")
+  console.log(langKey)
+
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={locales[langKey].siteTitle}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        lang={langKey}
       />
       <article
         className="blog-post"
@@ -85,6 +92,10 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
+        langKey
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
