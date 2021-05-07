@@ -38,7 +38,10 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <Bio />
+          <Bio 
+            blogAuthor={locales[langKey].blogAuthor}
+            writtenBy={locales[langKey].writtenBy}
+          />
         </footer>
       </article>
       <nav className="blog-post-nav">
