@@ -6,6 +6,7 @@ const locales = require('../utils/locales')
 const Layout = ({ location, title, children, langKey }) => {
   const rootPaths = [`${__PATH_PREFIX__}/`, `${__PATH_PREFIX__}/fa/`, `${__PATH_PREFIX__}/fa`]
   const isRootPath = rootPaths.includes(location.pathname)
+  const isFa = location.pathname.includes("/fa/")
   let header
 
   if (isRootPath) {
@@ -14,7 +15,7 @@ const Layout = ({ location, title, children, langKey }) => {
         <Link to={location.pathname}>{title}</Link>
       </h1>
     )
-  } else if (location.pathname.includes("/fa/")) {
+  } else if (isFa) {
     header = (
       <Link className="header-link-home" to="/fa/">{title}</Link>
     )
@@ -31,6 +32,7 @@ const Layout = ({ location, title, children, langKey }) => {
       <footer style={{direction: "ltr"}}>
         © {new Date().getFullYear()}
         <div style={{ float: 'right' }}>
+          <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{' '}&bull;{' '}
           <a href="/rss.xml" target="_blank" rel="noopener noreferrer">{locales[langKey].rss}</a>
         </div>
       </footer>
