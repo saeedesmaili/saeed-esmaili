@@ -2,6 +2,7 @@
 title: سلام دنیا
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
+tags: ["animals", "Chicago", "zoos"]
 ---
 
 یک مطلب تست

@@ -1,37 +1,24 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import get from 'lodash/get';
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+class BlogIndexTemplate extends React.Component {
+  render() {
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const langKey = this.props.pageContext.langKey;
+    console.log(this.props)
 
-  console.log("Noooo")
-  console.log(data)
-
-  if (posts.length === 0) {
+    const posts = get(this, 'props.data.allMarkdownRemark.nodes');
     return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="Home" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
-  return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="Home" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
-        {posts.map(post => {
+      <Layout location={this.props.location} title={siteTitle}>
+       <Seo title="Home" />
+       <Bio />
+       <ol style={{ listStyle: `none` }}>
+         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
@@ -63,19 +50,22 @@ const BlogIndex = ({ data, location }) => {
         })}
       </ol>
     </Layout>
-  )
+    )
+  }
 }
 
-export default BlogIndex
+
+export default BlogIndexTemplate
 
 export const pageQuery = graphql`
-  query {
+  query($langKey: String!) {
     site {
       siteMetadata {
         title
       }
     }
     allMarkdownRemark(
+      filter: { fields: { langKey: { eq: $langKey } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       nodes {
