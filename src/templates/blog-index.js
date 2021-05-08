@@ -95,6 +95,7 @@ export const pageQuery = graphql`
         }
         timeToRead
         frontmatter {
+          relativeDate: date(fromNow: true)
           date(formatString: "MMMM DD, YYYY")
           title
           description
