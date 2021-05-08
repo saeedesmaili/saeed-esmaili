@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
+import defaultOpenGraphImage from '../images/default.png'
 
 const locales = require('../utils/locales')
 
@@ -27,6 +28,7 @@ class BlogIndexTemplate extends React.Component {
         title={locales[langKey].homeTitle}
         description={locales[langKey].description}
         lang={langKey}
+        image={defaultOpenGraphImage}
        />
        <Bio 
         blogAuthor={locales[langKey].blogAuthor}
