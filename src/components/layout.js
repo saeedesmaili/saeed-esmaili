@@ -33,7 +33,7 @@ const Layout = ({ location, title, children, langKey }) => {
         © {new Date().getFullYear()}
         <div style={{ float: 'right' }}>
           <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{' '}&bull;{' '}
-          <a href="/rss.xml" target="_blank" rel="noopener noreferrer">{locales[langKey].rss}</a>
+          <a href={isFa ? "/fa/rss.xml" : "/rss.xml"} target="_blank" rel="noopener noreferrer">{locales[langKey].rss}</a>
         </div>
       </footer>
     </div>
