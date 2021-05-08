@@ -9,6 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import defaultOpenGraphImage from '../images/default.png'
+
+const locales = require('../utils/locales')
 
 const Seo = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
@@ -30,7 +33,8 @@ const Seo = ({ description, lang, meta, title, image }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const defaultTitle = locales[lang].siteTitle || site.siteMetadata?.title
+  const ogImageUrl = site.siteMetadata.siteUrl + ( image || defaultOpenGraphImage )
 
   return (
     <Helmet
@@ -56,9 +60,21 @@ const Seo = ({ description, lang, meta, title, image }) => {
           property: `og:type`,
           content: `website`,
         },
+        // {
+        //   property: `og:image`,
+        //   content: `${site.siteMetadata?.siteUrl}${image || site.siteMetadata?.defaultImage}`,
+        // },
         {
           property: `og:image`,
-          content: `${site.siteMetadata?.siteUrl}${image || site.siteMetadata?.defaultImage}`,
+          content: ogImageUrl,
+        },
+        {
+          property: `twitter:image`,
+          content: ogImageUrl,
+        },
+        {
+          property: `image`,
+          content: ogImageUrl,
         },
         {
           name: `twitter:card`,
@@ -87,12 +103,12 @@ Seo.defaultProps = {
   description: ``,
 }
 
-Seo.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-  image: PropTypes.string,
-}
+// Seo.propTypes = {
+//   description: PropTypes.string,
+//   lang: PropTypes.string,
+//   meta: PropTypes.arrayOf(PropTypes.object),
+//   title: PropTypes.string.isRequired,
+//   // image: PropTypes.string,
+// }
 
 export default Seo

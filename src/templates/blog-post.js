@@ -16,6 +16,11 @@ const BlogPostTemplate = ({ data, location }) => {
   const langKey = post.fields.langKey
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  const { coverImage } = post.frontmatter
+  const coverImagePath = coverImage && coverImage.childImageSharp.fixed.src
+
+  console.log(coverImagePath)
+
   let gitalkConfig = {
     id: post.slug || post.id,
     title: post.frontmatter.title,
@@ -27,6 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         lang={langKey}
+        image={coverImagePath}
       />
       <article
         className="blog-post"
@@ -77,6 +83,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        coverImage 
       }
       fields {
         slug
