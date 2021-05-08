@@ -5,6 +5,8 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
+import Gitalk from 'gatsby-plugin-gitalk'
+import '@suziwen/gitalk/dist/gitalk.css'
 
 
 const locales = require('../utils/locales')
@@ -14,6 +16,10 @@ const BlogPostTemplate = ({ data, location }) => {
   const langKey = post.fields.langKey
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
+  let gitalkConfig = {
+    id: post.slug || post.id,
+    title:post.frontmatter.title,
+  }
 
   return (
     <Layout location={location} title={locales[langKey].siteTitle} langKey={langKey}>
@@ -45,6 +51,7 @@ const BlogPostTemplate = ({ data, location }) => {
           />
         </footer>
       </article>
+      <Gitalk options={gitalkConfig}/>
     </Layout>
   )
 }

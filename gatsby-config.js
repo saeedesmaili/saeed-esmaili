@@ -61,6 +61,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-gitalk`,
+      options: {
+        config: {
+          clientID: `${process.env.githubCliendId}`,
+          clientSecret: `${process.env.githubCliendSecret}`,
+          repo: 'saeed-esmaili',
+          owner: 'saeedesmaili',
+          admin: ['saeedesmaili'],
+          perPage: 50,
+          labels: ['Comment'],
+        }
+
+      }
+    },
+    {
       resolve: 'gatsby-plugin-i18n',
       options: {        
         langKeyDefault: 'en',
