@@ -114,6 +114,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
+                  filter: { fields: { langKey: { eq: "en" } } }
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   nodes {
@@ -131,6 +132,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: "Saeed Esmaili's Datanerd Blog RSS Feed",
           },
         ],
       },

@@ -16,7 +16,7 @@ class BlogIndexTemplate extends React.Component {
     const langKey = this.props.pageContext.langKey;
     console.log(this.props)
 
-    if (langKey == 'fa') {
+    if (langKey === 'fa') {
       import('../fonts/fonts-post.fa.css')
     }
 
