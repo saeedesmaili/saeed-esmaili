@@ -18,7 +18,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const { previous, next } = data
   let gitalkConfig = {
     id: post.slug || post.id,
-    title:post.frontmatter.title,
+    title: post.frontmatter.title,
   }
 
   return (
