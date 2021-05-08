@@ -7,6 +7,7 @@ import Seo from "../components/seo"
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import Gitalk from 'gatsby-plugin-gitalk'
 import '@suziwen/gitalk/dist/gitalk.css'
+import defaultOpenGraphImage from '../images/default.png'
 
 
 const locales = require('../utils/locales')
@@ -17,8 +18,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const { coverImage } = post.frontmatter
-  console.log(data.allImageSharp.nodes[0])
-  const coverImagePath = data.allImageSharp.nodes[0].fixed.src
+  const coverImagePath = data.allImageSharp.nodes[0]?.fixed.src || defaultOpenGraphImage
 
   let gitalkConfig = {
     id: post.slug || post.id,
