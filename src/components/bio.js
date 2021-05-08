@@ -43,7 +43,7 @@ const Bio = ({ blogAuthor, writtenBy, isRoot, langKey }) => {
         className="bio-avatar"
         layout="fixed"
         formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/profile-pic.png"
+        src="../images/profile-pic.jpeg"
         width={50}
         height={50}
         quality={95}
