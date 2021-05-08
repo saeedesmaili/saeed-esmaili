@@ -325,6 +325,10 @@ a:focus {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+  direction: ltr;
+}
+.language-text {
+  direction: ltr;
 }
 
 /* Media queries */
