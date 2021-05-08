@@ -7,7 +7,7 @@ module.exports = {
       siteTitle: 'Saeed Esmaili, Data Nerd',
       blogAuthor: {
         name: 'Saeed Esmaili',
-        summary: ' who is a data professional, and enjoys playing with, analysing and talking about data.'
+        summary: ', a data professional. I enjoy playing with, analyzing, and talking about any type of data.'
       },
       writtenBy: "Written by",
       otherBlog: "persian posts",
@@ -27,7 +27,7 @@ module.exports = {
       siteTitle: 'دیتانرد، سعید اسماعیلی',
       blogAuthor: {
         name: 'سعید اسماعیلی',
-        summary: '، دیتا آنالیست دیوار.'
+        summary: '، متخصص تحلیل دیتا، و علاقمند به کنکاش، بررسی و صحبت درباره هر نوع دیتا.'
       },
       writtenBy: 'نوشته‌های',
       otherBlog: "نوشته‌های انگلیسی",
