@@ -5,6 +5,7 @@ module.exports = {
       name: `Saeed Esmaili`,
       summary: `who is a data professional, and enjoys playing with, analysing and talking about data.`,
     },
+    image: `/src/images/default.png`,
     description: `Interesting stuff about what we can find out using data.`,
     siteUrl: `https://saeedesmaili.gtsb.io/`,
     social: {
