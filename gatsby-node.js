@@ -4,7 +4,27 @@ const locales = require('./src/utils/locales')
 const { supportedLanguages } = require('./i18n')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage, deletePage } = actions
+  const { createPage, createRedirect } = actions
+
+  // for SEO and migration purpose
+  createRedirect({
+    fromPath: '/6/data-analysis-with-python-movielens/',
+    toPath: '/fa/data-analysis-with-python-movielens/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  });
+  createRedirect({
+    fromPath: '/44/how-to-automate-with-python-google-sheet/',
+    toPath: '/fa/how-to-automate-with-python-google-sheet/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  });
+  createRedirect({
+    fromPath: '/57/snapp-tap30-price-comparison/',
+    toPath: '/fa/snapp-tap30-price-comparison/',
+    isPermanent: true,
+    redirectInBrowser: true,
+  });
 
   // Create an index page for each supported language
   Object.keys(supportedLanguages).forEach(langKey => {
