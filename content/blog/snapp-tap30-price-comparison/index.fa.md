@@ -15,7 +15,7 @@ tags:
   - "اسنپ"
   - "پایتون"
   - "تپ-سی"
-coverImage: "snapp-tap30-price-comparison-hourly-tehran.png"
+coverImage: "2019-01-30-snapp-tap30-price-comparison-hourly-tehran.png"
 ---
 
 احتمالا واسه شما هم پیش اومده که موقع درخواست آنلاین تاکسی، مسیر رو روی هر دو اپ اسنپ و تپ‌سی انتخاب کردید تا قیمتشون رو مقایسه کنید و خیلی وقت‌‌ها قیمتشون تفاوت زیادی با هم داشته‌اند. اوایل پاییز بود که کنجکاو شدم راجع به تفاوت قیمت این دو سرویس تاکسی آنلاین تحقیق کنم. همون موقع [توی توییتر پرسیدم](https://twitter.com/SaeedEsmaili/status/1051877324872921088) تا ببینم تجربه کاربرا کدوم سرویس رو ارزون‌تر نشون میده:  
@@ -92,7 +92,7 @@ layout = dict(title = 'Hourly price trend - Tehran<br><span style="font-size: 1.
 fig = dict(data=data, layout=layout)
 iplot(fig)
 ```
-![](images/snapp-tap30-price-comparison-hourly-tehran.png)
+![](images/2019-01-30-snapp-tap30-price-comparison-hourly-tehran.png)
 
 این‌طور به نظر میاد که تو ساعت‌های اوج درخواست صبح و عصر، قیمت اسنپ بیشتره، ولی دقت کنید که اختلافشون اون‌قدرها هم زیاد نیست. میانگین قیمت اسنپ برای هر کیلومتر مسافت، ۹۵۵ تومان و میانگین قیمت تپ‌سی ۹۴۰ تومانه. اگه مصرانه بخوایم دنبال یه برنده باشیم، تپ‌سی قیمتش پایین‌تره، ولی با اختلاف خیلی خیلی کم.
 

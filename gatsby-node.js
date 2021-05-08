@@ -53,6 +53,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             fields {
               slug
             }
+            frontmatter {
+              coverImage
+            }
           }
         }
       }
@@ -85,6 +88,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           id: post.id,
           previousPostId,
           nextPostId,
+          originalImage: post.frontmatter.coverImage,
         },
       })
     })
@@ -125,6 +129,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      coverImage: String
     }
 
     type Fields {

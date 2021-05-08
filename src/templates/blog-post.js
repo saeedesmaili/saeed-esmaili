@@ -17,9 +17,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const { coverImage } = post.frontmatter
-  const coverImagePath = coverImage
-
-  console.log(coverImagePath)
+  console.log(data.allImageSharp.nodes[0])
+  const coverImagePath = data.allImageSharp.nodes[0].fixed.src
 
   let gitalkConfig = {
     id: post.slug || post.id,
@@ -69,6 +68,7 @@ export const pageQuery = graphql`
     $id: String!
     $previousPostId: String
     $nextPostId: String
+    $originalImage: String
   ) {
     site {
       siteMetadata {
@@ -90,6 +90,17 @@ export const pageQuery = graphql`
         langKey
       }
       timeToRead
+    }
+    allImageSharp (
+      filter: { fixed: { originalName: { eq: $originalImage } } }
+      limit: 1
+    ) {
+      nodes {
+        fixed {
+          src
+          originalName
+        }
+      }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
       fields {
