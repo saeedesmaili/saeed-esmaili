@@ -134,6 +134,41 @@ module.exports = {
             output: "/rss.xml",
             title: "Saeed Esmaili's Datanerd Blog RSS Feed",
           },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { fields: { langKey: { eq: "fa" } } }
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/fa/rss.xml",
+            title: "فید وبلاگ دیتانرد - نوشته‌های سعید اسماعیلی",
+          },
         ],
       },
     },
