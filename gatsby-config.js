@@ -75,6 +75,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://datanerd.blog/`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gitalk`,
       options: {
         config: {

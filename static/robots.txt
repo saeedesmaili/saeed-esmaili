@@ -1,2 +1,3 @@
+Sitemap: https://datanerd.blog/sitemap.xml
 User-agent: *
 Disallow:
