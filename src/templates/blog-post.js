@@ -83,7 +83,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        coverImage 
+        cover_image: coverImage 
       }
       fields {
         slug
