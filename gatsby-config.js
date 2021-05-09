@@ -7,7 +7,7 @@ module.exports = {
     },
     image: `/src/images/default.png`,
     description: `Interesting stuff about what we can find out using data.`,
-    siteUrl: `https://saeedesmaili.gtsb.io/`,
+    siteUrl: `https://datanerd.blog/`,
     social: {
       twitter: `saeedesmaili`,
       linkedin: `saeedesmaili`,
