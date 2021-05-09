@@ -20,6 +20,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const { coverImage } = post.frontmatter
   const coverImagePath = data.allImageSharp.nodes[0]?.fixed.src || defaultOpenGraphImage
 
+  const translationPath = langKey === "en" ? `/fa${location.pathname}` : `${location.pathname.replace("fa/", "")}`
+  const translationLink = <span> • <Link to={translationPath}>{locales[langKey].translation}</Link></span>
+
   let gitalkConfig = {
     id: post.slug || post.id,
     title: post.frontmatter.title,
@@ -40,7 +43,11 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <small>{formatPostDate(post.frontmatter.date, langKey)}{` • ${formatReadingTime(post.timeToRead, langKey)}`}</small>
+          <small>
+            {formatPostDate(post.frontmatter.date, langKey)}
+            {` • ${formatReadingTime(post.timeToRead, langKey)}`}
+            {post.frontmatter.translated ? translationLink : ""}
+          </small>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
@@ -83,7 +90,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
-        cover_image: coverImage 
+        cover_image: coverImage
+        translated
       }
       fields {
         slug

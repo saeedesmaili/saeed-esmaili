@@ -17,8 +17,8 @@ module.exports = {
       linkedin: "linkedin",
       rss: "rss",
       minsRead: "mins read",
-      description: 'Written by Saeed Esmaili, a data professional. I enjoy playing with, analyzing, and talking about any type of data.'
-      
+      description: 'Written by Saeed Esmaili, a data professional. I enjoy playing with, analyzing, and talking about any type of data.',
+      translation: "persian",
     },
     fa: {
       path: 'fa',
@@ -37,6 +37,7 @@ module.exports = {
       linkedin: "لینکدین",
       rss: "فید",
       minsRead: "دقیقه",
-      description: 'نوشته‌های سعید اسماعیلی، متخصص تحلیل دیتا، و علاقمند به کنکاش، بررسی و صحبت درباره هر نوع دیتا.'
+      description: 'نوشته‌های سعید اسماعیلی، متخصص تحلیل دیتا، و علاقمند به کنکاش، بررسی و صحبت درباره هر نوع دیتا.',
+      translation: "انگلیسی",
     }
   }
