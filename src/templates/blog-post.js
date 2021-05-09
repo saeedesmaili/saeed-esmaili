@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { formatPostDate, formatReadingTime } from '../utils/helpers';
 import Gitalk from 'gatsby-plugin-gitalk'
-import '@suziwen/gitalk/dist/gitalk.css'
+
 import defaultOpenGraphImage from '../images/default.png'
 
 
@@ -22,6 +22,12 @@ const BlogPostTemplate = ({ data, location }) => {
 
   const translationPath = langKey === "en" ? `/fa${location.pathname}` : `${location.pathname.replace("fa/", "")}`
   const translationLink = <span> • <Link to={translationPath}>{locales[langKey].translation}</Link></span>
+
+  if (langKey === "en") {
+    require("@suziwen/gitalk/dist/gitalk.css")
+  } else {
+    require("../utils/gitalk-rtl.css")
+  }
 
   let gitalkConfig = {
     id: post.slug || post.id,
