@@ -9,9 +9,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import defaultOpenGraphImage from '../images/default.png'
+import defaultOpenGraphImage from "../images/default.png"
 
-const locales = require('../utils/locales')
+const locales = require("../utils/locales")
 
 const Seo = ({ description, lang, meta, title, image }) => {
   const { site } = useStaticQuery(
@@ -34,7 +34,8 @@ const Seo = ({ description, lang, meta, title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = locales[lang].siteTitle || site.siteMetadata?.title
-  const ogImageUrl = site.siteMetadata.siteUrl + ( image || defaultOpenGraphImage )
+  const ogImageUrl =
+    site.siteMetadata.siteUrl + (image || defaultOpenGraphImage)
 
   return (
     <Helmet

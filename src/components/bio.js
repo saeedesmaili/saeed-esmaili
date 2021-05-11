@@ -10,8 +10,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
 
-const locales = require('../utils/locales')
-
+const locales = require("../utils/locales")
 
 const Bio = ({ blogAuthor, writtenBy, isRoot, langKey }) => {
   const data = useStaticQuery(graphql`
@@ -51,14 +50,39 @@ const Bio = ({ blogAuthor, writtenBy, isRoot, langKey }) => {
       />
       {author?.name && (
         <p>
-          {writtenBy} <strong>{author.name}</strong>{author?.summary || null}
+          {writtenBy} <strong>{author.name}</strong>
+          {author?.summary || null}
           {` `}
-          <br/>
-          <Link to={isRoot ? "/fa/" : "/"}>{locales[langKey].otherBlog}</Link>{' '}&bull;{' '}
-          <a href={`mailto:${social?.email || ``}`}>{locales[langKey].email}</a>{' '}&bull;{' '}
-          <a href={`https://twitter.com/${social?.twitter || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].twitter}</a>{' '}&bull;{' '}
-          <a href={`https://github.com/${social?.github || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].github}</a>{' '}&bull;{' '}
-          <a href={`https://www.linkedin.com/in/${social?.linkedin || ``}`} target="_blank" rel="noopener noreferrer">{locales[langKey].linkedin}</a>
+          <br />
+          <Link to={isRoot ? "/fa/" : "/"}>
+            {locales[langKey].otherBlog}
+          </Link>{" "}
+          &bull;{" "}
+          <a href={`mailto:${social?.email || ``}`}>{locales[langKey].email}</a>{" "}
+          &bull;{" "}
+          <a
+            href={`https://twitter.com/${social?.twitter || ``}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {locales[langKey].twitter}
+          </a>{" "}
+          &bull;{" "}
+          <a
+            href={`https://github.com/${social?.github || ``}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {locales[langKey].github}
+          </a>{" "}
+          &bull;{" "}
+          <a
+            href={`https://www.linkedin.com/in/${social?.linkedin || ``}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {locales[langKey].linkedin}
+          </a>
         </p>
       )}
     </div>

@@ -1,5 +1,6 @@
 body:lang(fa) .markdown-body {
-  font-family: "Vazir", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Vazir", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 body:lang(fa) .gt-container .gt-ico-text {
   margin-right: 0.3125em;

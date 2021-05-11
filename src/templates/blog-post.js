@@ -4,14 +4,15 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { formatPostDate, formatReadingTime } from '../utils/helpers';
-import Gitalk from 'gatsby-plugin-gitalk'
+import Signup from "../components/signup"
+import { formatPostDate, formatReadingTime } from "../utils/helpers"
+import Gitalk from "gatsby-plugin-gitalk"
 
-import defaultOpenGraphImage from '../images/default.png'
+import defaultOpenGraphImage from "../images/default.png"
 import "@suziwen/gitalk/dist/gitalk.css"
 import "../utils/gitalk-rtl.css"
 
-const locales = require('../utils/locales')
+const locales = require("../utils/locales")
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -19,10 +20,19 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   const { coverImage } = post.frontmatter
-  const coverImagePath = data.allImageSharp.nodes[0]?.fixed.src || defaultOpenGraphImage
+  const coverImagePath =
+    data.allImageSharp.nodes[0]?.fixed.src || defaultOpenGraphImage
 
-  const translationPath = langKey === "en" ? `/fa${location.pathname}` : `${location.pathname.replace("fa/", "")}`
-  const translationLink = <span> • <Link to={translationPath}>{locales[langKey].translation}</Link></span>
+  const translationPath =
+    langKey === "en"
+      ? `/fa${location.pathname}`
+      : `${location.pathname.replace("fa/", "")}`
+  const translationLink = (
+    <span>
+      {" "}
+      • <Link to={translationPath}>{locales[langKey].translation}</Link>
+    </span>
+  )
 
   let gitalkConfig = {
     id: post.slug || post.id,
@@ -30,7 +40,11 @@ const BlogPostTemplate = ({ data, location }) => {
   }
 
   return (
-    <Layout location={location} title={locales[langKey].siteTitle} langKey={langKey}>
+    <Layout
+      location={location}
+      title={locales[langKey].siteTitle}
+      langKey={langKey}
+    >
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -56,15 +70,16 @@ const BlogPostTemplate = ({ data, location }) => {
         />
         <hr />
         <footer>
-          <Bio 
+          <Bio
             blogAuthor={locales[langKey].blogAuthor}
             writtenBy={locales[langKey].writtenBy}
             isRoot={langKey === "en" ? true : false}
-            langKey={langKey} 
+            langKey={langKey}
           />
+          <Signup />
         </footer>
       </article>
-      <Gitalk options={gitalkConfig}/>
+      <Gitalk options={gitalkConfig} />
     </Layout>
   )
 }
@@ -100,7 +115,7 @@ export const pageQuery = graphql`
       }
       timeToRead
     }
-    allImageSharp (
+    allImageSharp(
       filter: { fixed: { originalName: { eq: $originalImage } } }
       limit: 1
     ) {
