@@ -40,8 +40,9 @@ const Layout = ({ location, title, children, langKey }) => {
       <footer style={{ direction: "ltr" }}>
         © {new Date().getFullYear()}
         <div style={{ float: "right" }}>
-          <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{" "}
-          &bull;{" "}
+          <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{" "}&bull;{" "}
+          <Link to="/contact/">{locales[langKey].contact}</Link>{" "}&bull;{" "}
+          <Link to={isFa ? "/" : "/fa/"}>{locales[langKey].otherBlog}</Link>{" "}&bull;{" "}
           <a
             href={isFa ? "/fa/rss.xml" : "/rss.xml"}
             target="_blank"

@@ -15,30 +15,16 @@ const ContactMePage = ({ data, location }) => {
     browser && (
       <Layout location={location} title={siteTitle} langKey="en">
         <Seo title="Contact Saeed Esmaili" />
-        <h1>Contact Saeed Esmaili</h1>
-        <p>You can contact with me with the following form.</p>
-        <form
-          name="Contact Form en"
-          method="POST"
-          data-netlify="true"
-          // action="/thank-you"
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSf7kXvu30rPNVegbeZNHbdwHtAAreOwUQRlO9tPLQCT-gosvw/viewform?embedded=true"
+          width="640"
+          height="900"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
         >
-          <input
-            className="formkit-input"
-            type="hidden"
-            name="form-name"
-            value="Contact Form - en"
-          />
-          <div>
-            <label>Your Email:</label>
-            <input type="email" name="email" />
-          </div>
-          <div>
-            <label>Message:</label>
-            <textarea name="message" />
-          </div>
-          <button type="submit">Send</button>
-        </form>
+          Loading…
+        </iframe>
       </Layout>
     )
   )

@@ -3,7 +3,7 @@ module.exports = {
     default: true,
     path: "en",
     locale: "English",
-    homeTitle: "Home",
+    homeTitle: "home",
     siteTitle: "Saeed Esmaili, Data Nerd",
     blogAuthor: {
       name: "Saeed Esmaili",
@@ -21,6 +21,7 @@ module.exports = {
     description:
       "Written by Saeed Esmaili, a data professional. I enjoy playing with, analyzing, and talking about any type of data.",
     translation: "persian",
+    contact: "contact me",
   },
   fa: {
     path: "fa",
@@ -43,5 +44,6 @@ module.exports = {
     description:
       "نوشته‌های سعید اسماعیلی، متخصص تحلیل دیتا، و علاقمند به کنکاش، بررسی و صحبت درباره هر نوع دیتا.",
     translation: "انگلیسی",
+    contact: "تماس با من",
   },
 }
