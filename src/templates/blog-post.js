@@ -76,7 +76,7 @@ const BlogPostTemplate = ({ data, location }) => {
             isRoot={langKey === "en" ? true : false}
             langKey={langKey}
           />
-          <Signup />
+          <Signup langKey={langKey} />
         </footer>
       </article>
       <Gitalk options={gitalkConfig} />

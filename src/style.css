@@ -104,7 +104,7 @@ h6 {
   font-family: var(--font-heading);
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
-  line-height: var(--lineHeight-tight);
+  line-height: var(--lineHeight-normal);
   letter-spacing: -0.025em;
 }
 
@@ -119,7 +119,7 @@ h6 {
 
 h1 {
   font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
+  font-size: var(--fontSize-4);
   color: var(--color-heading-black);
 }
 
@@ -377,7 +377,15 @@ body:lang(fa) blockquote {
 body:lang(fa) .post-content,
 body:lang(fa) h1,
 body:lang(fa) h2,
+body:lang(fa) h3,
+body:lang(fa) h4,
+body:lang(fa) h5,
+body:lang(fa) h6,
 body:lang(fa) .header-link-home,
 body:lang(fa) .blog-post header p {
   font-family: "Vazir";
+}
+
+.formkit-field {
+  direction: ltr !important;
 }

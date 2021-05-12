@@ -2,17 +2,42 @@ import React from "react"
 
 import "./signup.css"
 
-const FORM_ID = "2262749"
+const EN_FORM_ID = "2262749"
+const FA_FORM_ID = "2273768"
 
 class Signup extends React.Component {
   render() {
+    let form,
+      { langKey } = this.props
+    switch (langKey) {
+      case "fa":
+        form = {
+          id: FA_FORM_ID,
+          title: "عضویت در خبرنامه",
+          subTitle: "آخرین مطالب دیتانرد رو با ایمیل دریافت کنید.",
+          buttonText: "تایید",
+          buttonColor: "rgb(55, 0, 179)",
+          subText:
+            "هیچ اسپمی دریافت نخواهید کرد. هر لحظه بخواید می‌تونید عضویتتون رو لغو کنید.",
+        }
+        break
+      default:
+        form = {
+          id: EN_FORM_ID,
+          title: "Join the Newsletter",
+          subTitle: "Subscribe to get datanerd's latest content by email.",
+          buttonText: "Subscribe",
+          buttonColor: "rgb(55, 0, 179)",
+          subText: "I won't send you spam. Unsubscribe at any time.",
+        }
+    }
     return (
       <form
-        action="https://app.convertkit.com/forms/2262749/subscriptions"
+        action={`https://app.convertkit.com/forms/${form.id}/subscriptions`}
         style={{ backgroundColor: "rgb(249, 250, 251)", borderRadius: 4 }}
         className="seva-form formkit-form"
         method="post"
-        data-sv-form={2262749}
+        data-sv-form={form.id}
         data-uid="de1eed4248"
         data-format="inline"
         data-version={5}
@@ -26,14 +51,14 @@ class Signup extends React.Component {
             style={{ color: "rgb(77, 77, 77)", fontSize: 27, fontWeight: 700 }}
             data-element="header"
           >
-            <h2>Join the Newsletter</h2>
+            <h2>{form.title}</h2>
           </div>
           <div
             className="formkit-subheader"
             style={{ color: "rgb(104, 104, 104)", fontSize: 18 }}
             data-element="subheader"
           >
-            <p>Subscribe to get datanerd's latest content by email.</p>
+            <p>{form.subTitle}</p>
           </div>
           <ul
             className="formkit-alert formkit-alert-error"
@@ -81,7 +106,7 @@ class Signup extends React.Component {
               className="formkit-submit formkit-submit"
               style={{
                 color: "rgb(255, 255, 255)",
-                backgroundColor: "rgb(55, 0, 179)",
+                backgroundColor: form.buttonColor,
                 borderRadius: 4,
                 fontWeight: 700,
               }}
@@ -91,7 +116,7 @@ class Signup extends React.Component {
                 <div />
                 <div />
               </div>
-              <span className>Subscribe</span>
+              <span className>{form.buttonText}</span>
             </button>
           </div>
           <div
@@ -99,7 +124,7 @@ class Signup extends React.Component {
             style={{ color: "rgb(77, 77, 77)", fontSize: 13, fontWeight: 400 }}
             data-element="guarantee"
           >
-            <p>I won't send you spam. Unsubscribe at any time.</p>
+            <p>{form.subText}</p>
           </div>
         </div>
       </form>
