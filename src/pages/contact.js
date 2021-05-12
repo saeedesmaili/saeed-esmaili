@@ -4,6 +4,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import "../components/signup.css"
+
 const browser = typeof window !== "undefined" && window
 
 const ContactMePage = ({ data, location }) => {
@@ -16,12 +18,17 @@ const ContactMePage = ({ data, location }) => {
         <h1>Contact Saeed Esmaili</h1>
         <p>You can contact with me with the following form.</p>
         <form
-          name="Contact Form - en"
+          name="Contact Form en"
           method="POST"
           data-netlify="true"
-          action="/thank-you"
+          // action="/thank-you"
         >
-          <input type="hidden" name="form-name" value="Contact Form - en" />
+          <input
+            className="formkit-input"
+            type="hidden"
+            name="form-name"
+            value="Contact Form - en"
+          />
           <div>
             <label>Your Email:</label>
             <input type="email" name="email" />
