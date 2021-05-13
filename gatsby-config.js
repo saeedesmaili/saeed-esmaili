@@ -12,7 +12,7 @@ module.exports = {
       twitter: `saeedesmaili`,
       linkedin: `saeedesmaili`,
       email: `me@saeedesmaili.com`,
-      github: `saeedesmaili`
+      github: `saeedesmaili`,
     },
   },
   plugins: [
@@ -87,22 +87,21 @@ module.exports = {
         config: {
           clientID: `${process.env.githubCliendId}`,
           clientSecret: `${process.env.githubCliendSecret}`,
-          repo: 'saeed-esmaili',
-          owner: 'saeedesmaili',
-          admin: ['saeedesmaili'],
+          repo: "saeed-esmaili",
+          owner: "saeedesmaili",
+          admin: ["saeedesmaili"],
           perPage: 50,
-          labels: ['Comment'],
-        }
-
-      }
+          labels: ["Comment"],
+        },
+      },
     },
     {
-      resolve: 'gatsby-plugin-i18n',
-      options: {        
-        langKeyDefault: 'en',
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "en",
         useLangKeyLayout: false,
-        pagesPaths: [`${__dirname}/content/blog`]
-      }
+        pagesPaths: [`${__dirname}/content/blog`],
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
@@ -208,6 +207,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

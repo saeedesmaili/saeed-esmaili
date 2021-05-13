@@ -1,5 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, navigate } from "gatsby"
+import qs from "qs"
+import { CONFIRMATION_SUCCESS, EMAIL_CONFIRMATION, useModal } from "./modal"
+
+const QUERIES = [EMAIL_CONFIRMATION, CONFIRMATION_SUCCESS]
 
 const locales = require("../utils/locales")
 
@@ -33,6 +37,16 @@ const Layout = ({ location, title, children, langKey }) => {
     )
   }
 
+  const { source } = qs.parse(location.search, { ignoreQueryPrefix: true })
+  const { Modal, setType } = useModal()
+
+  React.useEffect(() => {
+    if (QUERIES.some(query => query === source)) {
+      setType(source)
+      navigate("/")
+    }
+  }, [source, setType])
+
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
@@ -40,9 +54,10 @@ const Layout = ({ location, title, children, langKey }) => {
       <footer style={{ direction: "ltr" }}>
         © {new Date().getFullYear()}
         <div style={{ float: "right" }}>
-          <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{" "}&bull;{" "}
-          <Link to="/contact/">{locales[langKey].contact}</Link>{" "}&bull;{" "}
-          <Link to={isFa ? "/" : "/fa/"}>{locales[langKey].otherBlog}</Link>{" "}&bull;{" "}
+          <Link to={isFa ? "/fa/" : "/"}>{locales[langKey].homeTitle}</Link>{" "}
+          &bull; <Link to="/contact/">{locales[langKey].contact}</Link> &bull;{" "}
+          <Link to={isFa ? "/" : "/fa/"}>{locales[langKey].otherBlog}</Link>{" "}
+          &bull;{" "}
           <a
             href={isFa ? "/fa/rss.xml" : "/rss.xml"}
             target="_blank"
@@ -51,6 +66,7 @@ const Layout = ({ location, title, children, langKey }) => {
             {locales[langKey].rss}
           </a>
         </div>
+        <Modal />
       </footer>
     </div>
   )
