@@ -38,12 +38,11 @@ const Layout = ({ location, title, children, langKey }) => {
   }
 
   const { source } = qs.parse(location.search, { ignoreQueryPrefix: true })
-  const { Modal, setType } = useModal()
+  const { Modal, setType } = useModal(location.pathname)
 
   React.useEffect(() => {
     if (QUERIES.some(query => query === source)) {
       setType(source)
-      navigate("/")
     }
   }, [source, setType])
 

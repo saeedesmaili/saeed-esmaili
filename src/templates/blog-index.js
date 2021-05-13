@@ -13,7 +13,6 @@ const locales = require("../utils/locales")
 class BlogIndexTemplate extends React.Component {
   render() {
     const langKey = this.props.pageContext.langKey
-    console.log(this.props)
 
     if (langKey === "fa") {
       import("../fonts/fonts-post.fa.css")
