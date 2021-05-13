@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react"
 
 import usePortal from "react-cool-portal"
+import { navigate } from "gatsby"
 
 export const EMAIL_CONFIRMATION_EN = "email-confirmation-en"
 export const CONFIRMATION_SUCCESS_EN = "confirmation-success-en"
@@ -31,10 +32,12 @@ export const MODAL_DATA = [
   },
 ]
 
-export const useModal = (options = {}) => {
+export const useModal = pathname => {
   const { Portal, hide, show, isShow } = usePortal({
-    ...options,
     defaultShow: false,
+    onHide: () => {
+      navigate(pathname)
+    },
   })
 
   const [type, setType] = useState(null)
