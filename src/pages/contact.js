@@ -22,6 +22,9 @@ const ContactMePage = ({ data, location }) => {
           frameborder="0"
           marginheight="0"
           marginwidth="0"
+          style={{
+            marginLeft: "-2.5rem",
+          }}
         >
           Loading…
         </iframe>

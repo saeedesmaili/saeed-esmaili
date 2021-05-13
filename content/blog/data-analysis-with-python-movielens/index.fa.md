@@ -2,15 +2,6 @@
 title: "چطور تو پایتون با دیتا کار کنیم - آنالیز مقدماتی دیتاست MovieLens"
 description: "در این پست، دیتاست مشهور MovieLens رو بررسی می‌کنم و یک سری آنالیزهای مقدماتی رو روی این دیتاست انجام میدم."
 date: "2018-01-19"
-categories: 
-  - "data-analysis"
-tags: 
-  - "data"
-  - "movielens"
-  - "pandas"
-  - "آنالیز-دیتا"
-  - "پایتون"
-  - "فیلم"
 coverImage: "2018-01-19-df_mean_ratings_with_diff.png"
 translated: true
 ---

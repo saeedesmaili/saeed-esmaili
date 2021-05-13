@@ -2,15 +2,6 @@
 title: "How to work with data in python - basic analysis of MovieLens dataset"
 description: "In this post, I want to have a look at a popular public dataset, called MovieLens, and do some basic data wrangling on it."
 date: "2018-01-19"
-categories: 
-  - "data-analysis"
-tags: 
-  - "data"
-  - "movielens"
-  - "pandas"
-  - "data-analysis"
-  - "python"
-  - "movie"
 coverImage: "2018-01-19-df_mean_ratings_with_diff.png"
 translated: true
 ---
