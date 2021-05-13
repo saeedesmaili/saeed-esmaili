@@ -1,22 +1,12 @@
 import * as React from "react"
 import { Link, navigate } from "gatsby"
 import qs from "qs"
-import {
-  EMAIL_CONFIRMATION_EN,
-  CONFIRMATION_SUCCESS_EN,
-  EMAIL_CONFIRMATION_FA,
-  CONFIRMATION_SUCCESS_FA,
-  useModal,
-} from "./modal"
-
-const QUERIES = [
-  EMAIL_CONFIRMATION_EN,
-  CONFIRMATION_SUCCESS_EN,
-  EMAIL_CONFIRMATION_FA,
-  CONFIRMATION_SUCCESS_FA,
-]
+import { useModal } from "./modal"
 
 const locales = require("../utils/locales")
+const modalConfig = require("./modal-config")
+
+const QUERIES = modalConfig.map(item => item.type)
 
 const Layout = ({ location, title, children, langKey }) => {
   const rootPaths = [

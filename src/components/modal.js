@@ -3,34 +3,12 @@ import React, { useCallback, useEffect, useState } from "react"
 import usePortal from "react-cool-portal"
 import { navigate } from "gatsby"
 
+const modalConfig = require("./modal-config")
+
 export const EMAIL_CONFIRMATION_EN = "email-confirmation-en"
 export const CONFIRMATION_SUCCESS_EN = "confirmation-success-en"
 export const EMAIL_CONFIRMATION_FA = "email-confirmation-fa"
 export const CONFIRMATION_SUCCESS_FA = "confirmation-success-fa"
-
-export const MODAL_DATA = [
-  {
-    type: EMAIL_CONFIRMATION_EN,
-    title: "Success!",
-    description: "Now check your email to confirm your subscription.",
-  },
-  {
-    type: CONFIRMATION_SUCCESS_EN,
-    title: "Done!",
-    description: "Thanks for subscribing.",
-  },
-  {
-    type: EMAIL_CONFIRMATION_FA,
-    title: "ثبت شد!",
-    description:
-      "الان لازمه که به ایمیلتون برید و با کلیک روی لینکی که براتون ارسال شده، عضویتتون رو تایید کنید.",
-  },
-  {
-    type: CONFIRMATION_SUCCESS_FA,
-    title: "تایید شد!",
-    description: "ممنون که عضو خبرنامه دیتانرد هستید.",
-  },
-]
 
 export const useModal = pathname => {
   const { Portal, hide, show, isShow } = usePortal({
@@ -44,7 +22,7 @@ export const useModal = pathname => {
   const [info, setInfo] = useState({})
 
   useEffect(() => {
-    const info = MODAL_DATA.filter(item => item.type === type)
+    const info = modalConfig.filter(item => item.type === type)
     setInfo(...info)
   }, [type])
 
@@ -60,6 +38,7 @@ export const useModal = pathname => {
         hide={hide}
         title={info?.title}
         description={info?.description}
+        button={info?.button}
       />
     </Portal>
   )
@@ -67,7 +46,7 @@ export const useModal = pathname => {
   return { Modal, show, hide, setType }
 }
 
-const ModalInfo = ({ title, description, hide }) => {
+const ModalInfo = ({ title, description, button, hide }) => {
   const handleClickBackdrop = e => {
     const { id } = e.target
     if (id === "modal") hide()
@@ -95,7 +74,7 @@ const ModalInfo = ({ title, description, hide }) => {
           <p className="modal-content">{description}</p>
 
           <button className="modal-button" onClick={hide}>
-            OK
+            {button}
           </button>
         </div>
       </div>
