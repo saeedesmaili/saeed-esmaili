@@ -2,19 +2,32 @@ import React, { useCallback, useEffect, useState } from "react"
 
 import usePortal from "react-cool-portal"
 
-export const EMAIL_CONFIRMATION = "email-confirmation"
-export const CONFIRMATION_SUCCESS = "confirmation-success"
+export const EMAIL_CONFIRMATION_EN = "email-confirmation-en"
+export const CONFIRMATION_SUCCESS_EN = "confirmation-success-en"
+export const EMAIL_CONFIRMATION_FA = "email-confirmation-fa"
+export const CONFIRMATION_SUCCESS_FA = "confirmation-success-fa"
 
 export const MODAL_DATA = [
   {
-    type: EMAIL_CONFIRMATION,
+    type: EMAIL_CONFIRMATION_EN,
     title: "Success!",
-    description: "Now check your email to confirm your subscription",
+    description: "Now check your email to confirm your subscription.",
   },
   {
-    type: CONFIRMATION_SUCCESS,
+    type: CONFIRMATION_SUCCESS_EN,
     title: "Done!",
-    description: "Thanks for subscribing!",
+    description: "Thanks for subscribing.",
+  },
+  {
+    type: EMAIL_CONFIRMATION_FA,
+    title: "ثبت شد!",
+    description:
+      "الان لازمه که به ایمیلتون برید و با کلیک روی لینکی که براتون ارسال شده، عضویتتون رو تایید کنید.",
+  },
+  {
+    type: CONFIRMATION_SUCCESS_FA,
+    title: "تایید شد!",
+    description: "ممنون که عضو خبرنامه دیتانرد هستید.",
   },
 ]
 

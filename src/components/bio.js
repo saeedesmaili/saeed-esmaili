@@ -90,10 +90,10 @@ const Bio = ({ blogAuthor, writtenBy, isRoot, langKey }) => {
 }
 
 Bio.propTypes = {
-  blogAuthor: PropTypes.arrayOf(PropTypes.object),
+  blogAuthor: PropTypes.object,
   writtenBy: PropTypes.string,
   isRoot: PropTypes.bool,
-  langKey: PropTypes.bool,
+  langKey: PropTypes.string,
 }
 
 export default Bio

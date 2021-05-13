@@ -1,9 +1,20 @@
 import * as React from "react"
 import { Link, navigate } from "gatsby"
 import qs from "qs"
-import { CONFIRMATION_SUCCESS, EMAIL_CONFIRMATION, useModal } from "./modal"
+import {
+  EMAIL_CONFIRMATION_EN,
+  CONFIRMATION_SUCCESS_EN,
+  EMAIL_CONFIRMATION_FA,
+  CONFIRMATION_SUCCESS_FA,
+  useModal,
+} from "./modal"
 
-const QUERIES = [EMAIL_CONFIRMATION, CONFIRMATION_SUCCESS]
+const QUERIES = [
+  EMAIL_CONFIRMATION_EN,
+  CONFIRMATION_SUCCESS_EN,
+  EMAIL_CONFIRMATION_FA,
+  CONFIRMATION_SUCCESS_FA,
+]
 
 const locales = require("../utils/locales")
 
@@ -38,12 +49,13 @@ const Layout = ({ location, title, children, langKey }) => {
   }
 
   const { source } = qs.parse(location.search, { ignoreQueryPrefix: true })
+  console.log(source)
   const { Modal, setType } = useModal()
 
   React.useEffect(() => {
     if (QUERIES.some(query => query === source)) {
       setType(source)
-      navigate("/")
+      source.includes("-fa") ? navigate("/fa/") : navigate("/")
     }
   }, [source, setType])
 
