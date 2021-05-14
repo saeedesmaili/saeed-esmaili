@@ -2,7 +2,7 @@ module.exports = [
   {
     type: "email-confirmation-en",
     title: "Success!",
-    description: "Now check your email to confirm your subscription.",
+    description: "Now check your email to confirm the subscription.",
     button: "OK",
   },
   {
@@ -16,13 +16,13 @@ module.exports = [
     title: "ثبت شد!",
     description:
       "الان لازمه که به ایمیلتون برید و با کلیک روی لینکی که براتون ارسال شده، عضویتتون رو تایید کنید.",
-    button: "تایید",
+    button: "باشه",
   },
   {
     type: "confirmation-success-fa",
     title: "تایید شد!",
     description: "ممنون که عضو خبرنامه دیتانرد هستید.",
-    button: "تایید",
+    button: "باشه",
   },
   {
     type: "message-sent",
