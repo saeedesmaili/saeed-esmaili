@@ -12,7 +12,9 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 این صفحه با اضافه شدن گزارش‌های دیتایی جدید، آپدیت خواهد شد. 
 
-آخرین آپدیت: ۲۷ اردیبهشت ۱۴۰۰ (گزارش ۹۸ ایران‌رنتر اضافه شد.)
+**آخرین آپدیت‌ها:**
+
+۲۶ اردیبهشت ۱۴۰۰: گزارش ۱۳۹۸ ایران‌رنتر (لندو)، گزارش ۱۳۹۸ پینکت، و گزارش نیم‌سال اول ۱۳۹۹ ای‌سمینار اضافه شد.
 
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
@@ -124,4 +126,10 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/iranrenter-1398.pdf)|
 
+|پینکت|
+|---:|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/pinket-1399.pdf)|
 
+|ای‌سمینار|
+|---:|
+|[نیم‌سال اول ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/eseminar-1399-q1-q2.pdf)|
