@@ -345,28 +345,56 @@ a:focus {
 }
 
 .modal {
-  @apply flex items-center justify-center fixed top-0 w-full h-full bg-gray-500 bg-opacity-50;
+  @apply flex;
+  @apply items-center; 
+  @apply justify-center;
+  @apply fixed;
+  @apply top-0;
+  @apply w-full;
+  @apply h-full;
+  @apply bg-gray-500;
+  @apply bg-opacity-50;
 }
 
 .modal-bar {
-  @apply flex flex-row-reverse justify-between items-center pt-3 pr-3;
+  @apply flex;
+  @apply flex-row-reverse;
+  @apply justify-between;
+  @apply items-center;
+  @apply pt-3;
+  @apply pr-3;
 }
 
 .modal-container {
-  @apply mx-auto my-2 w-80 max-w-screen-md bg-gray-600 border-2 border-gray-800 border-opacity-25 rounded-2xl;
+  @apply mx-auto;
+  @apply my-2;
+  @apply w-80;
+  @apply max-w-screen-md;
+  @apply bg-gray-600;
+  @apply border-2;
+  @apply border-gray-800;
+  @apply border-opacity-25;
+  @apply rounded-2xl;
 }
 
 .modal-content-container {
-  @apply flex flex-col p-8 items-center justify-center;
+  @apply flex;
+  @apply flex-col;
+  @apply p-8;
+  @apply items-center;
+  @apply justify-center;
 }
 
 .modal-header {
-  @apply mb-10 text-white;
+  @apply mb-10;
+  @apply text-white;
   margin-top: 0;
 }
 
 .modal-content {
-  @apply text-center text-white mb-10;
+  @apply text-center;
+  @apply text-white;
+  @apply mb-10;
 }
 
 .modal-button-container {
@@ -375,11 +403,22 @@ a:focus {
 
 .modal-button {
   background-color: var(--color-primary);
-  @apply opacity-90 hover:opacity-100 text-white font-bold py-2 px-4 rounded-2xl border-none w-full;
+  @apply opacity-90;
+  @apply hover:opacity-100;
+  @apply text-white;
+  @apply font-bold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded-2xl;
+  @apply border-none;
+  @apply w-full;
 }
 
 .modal-close {
-  @apply bg-transparent border-none text-white text-3xl;
+  @apply bg-transparent;
+  @apply border-none;
+  @apply text-white;
+  @apply text-3xl;
 }
 
 /*

@@ -206,7 +206,30 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
-    `gatsby-plugin-advanced-sitemap`,
+    `gatsby-plugin-sitemap`,
+    // {
+    //   resolve: `gatsby-plugin-advanced-sitemap`,
+    //   options: {
+    //     query: `
+    //     {
+    //       allSitePage {
+    //         edges {
+    //           node {
+    //             id
+    //             slug: path
+    //           }
+    //         }
+    //       }
+    //     }
+    //     `,
+    //     mapping: {
+    //       allSitePage: {
+    //         sitemap: `pages`,
+    //       },
+    //     },
+    //     exclude: [`/404`, `/dev-404`],
+    //   },
+    // },
     `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
