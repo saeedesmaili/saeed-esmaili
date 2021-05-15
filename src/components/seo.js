@@ -51,7 +51,7 @@ const Seo = ({ description, lang, meta, title, image }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: [title, '|', defaultTitle].join(' '),
         },
         {
           property: `og:description`,
@@ -83,7 +83,7 @@ const Seo = ({ description, lang, meta, title, image }) => {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: [title, '|', defaultTitle].join(' '),
         },
         {
           name: `twitter:description`,
