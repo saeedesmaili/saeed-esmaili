@@ -12,7 +12,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 این صفحه با اضافه شدن گزارش‌های دیتایی جدید، آپدیت خواهد شد. 
 
-آخرین آپدیت: ۲۳ اردیبهشت ۱۴۰۰
+آخرین آپدیت: ۲۷ اردیبهشت ۱۴۰۰ (گزارش ۹۸ ایران‌رنتر اضافه شد.)
 
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
@@ -120,6 +120,8 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/triboon-1399.pdf)|
 
-
+|لندو (ایران‌رنتر)|
+|---:|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/iranrenter-1398.pdf)|
 
 
