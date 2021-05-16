@@ -14,7 +14,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 **آخرین آپدیت‌ها:**
 
-۲۶ اردیبهشت ۱۴۰۰: گزارش ۱۳۹۸ ایران‌رنتر (لندو)، گزارش ۱۳۹۸ پینکت، و گزارش نیم‌سال اول ۱۳۹۹ ای‌سمینار اضافه شد.
+۲۶ اردیبهشت ۱۴۰۰: گزارش ۱۳۹۸ ایران‌رنتر (لندو)، گزارش ۱۳۹۸ پینکت، گزارش نیم‌سال اول ۱۳۹۹ ای‌سمینار، و گزارش ۲۰۲۱ تدکس تهران اضافه شد، و گزارش ۱۳۹۹ آپارات موقتاً به درخواست این شرکت حذف شد.
 
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
@@ -60,7 +60,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 |آپارات|
 |---:|
-|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/aparat-99.pdf)|
+|[۱۳۹۹](#)|
 
 |شیپور|
 |---:|
@@ -133,3 +133,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |ای‌سمینار|
 |---:|
 |[نیم‌سال اول ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/eseminar-1399-q1-q2.pdf)|
+
+|تدکس تهران|
+|---:|
+|[۲۰۱۳-۲۰۲۱](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tedx-tehran-2013-2021.pdf)|
