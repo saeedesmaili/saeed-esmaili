@@ -16,6 +16,8 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 ۲۶ اردیبهشت ۱۴۰۰: گزارش ۱۳۹۸ ایران‌رنتر (لندو)، گزارش ۱۳۹۸ پینکت، گزارش نیم‌سال اول ۱۳۹۹ ای‌سمینار، و گزارش ۲۰۲۱ تدکس تهران اضافه شد، و گزارش ۱۳۹۹ آپارات موقتاً به درخواست این شرکت حذف شد.
 
+۷ خرداد ۱۴۰۰: گزارش شرکت‌های دانش‌بنیان ۱۳۹۲ تا ۱۳۹۸ ارزش‌آفرین اعتماد، مدیا اد ۱۳۹۸، بهار ۱۳۹۸ و نیم‌سال اول ۱۳۹۸ متریکس، تپسل ۱۳۹۸، گزارش سهم بازار شبکه‌های تبلیغاتی و گزارش پلتفرم‌های موبایل‌مارکتینگ ۱۳۹۸ تردنیکس، گزارش‌های سالانه ۱۳۹۸ و ۱۳۹۹ باگ‌دشت، و گزارش وضعیت اینترنت ایران ۱۳۹۹ ابر دراک اضافه شدند.
+
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
 |کافه‌بازار||
@@ -93,6 +95,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |تپسل|
 |---:|
 |[۱۳۹۷](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tapsell-1397.pdf)|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tapsell-1398.pdf)|
 
 |یکتانت|
 |---:|
@@ -117,6 +120,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |مدیا اد|
 |---:|
 |[تیر ۱۳۹۷ تا تیر ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/mediaad-1397-q2-q3-q4-1398-q1.pdf)|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/mediaad-1398.pdf)|
 
 |تریبون|
 |---:|
@@ -137,3 +141,26 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |تدکس تهران|
 |---:|
 |[۲۰۱۳-۲۰۲۱](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tedx-tehran-2013-2021.pdf)|
+
+|ارزش‌آفرین اعتماد|
+|---:|
+|[گزارش شرکت‌های دانش‌بنیان ۱۳۹۲ - ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/ietemad-1392-1398.pdf)|
+
+|متریکس|
+|---:|
+|[بهار ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/metrix-1399-q1.pdf)|
+|[نیم‌سال اول ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/metrix-1398-q1-q2.pdf)|
+
+|ترندیکس|
+|---:|
+|[سهم بازار شبکه‌های تبلیغاتی - ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/trendix-1398-ad-networks-market-share.pdf)|
+|[پلتفرم‌های موبایل‌مارکتینگ - ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/trendix-1398-mobile-marketing-platforms.pdf)|
+
+|باگ‌دشت|
+|---:|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/bugdasht-1398.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/bugdasht-1399.pdf)|
+
+|ابر دراک|
+|---:|
+|[وضعیت اینترنت ایران - ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/derak-cloud-1399.pdf)|
