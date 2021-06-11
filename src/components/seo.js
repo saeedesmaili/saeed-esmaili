@@ -89,6 +89,10 @@ const Seo = ({ description, lang, meta, title, image }) => {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `theme-color`,
+          content: `#3700b3`,
+        },
       ].concat(meta)}
     />
   )
