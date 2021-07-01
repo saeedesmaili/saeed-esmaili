@@ -18,6 +18,8 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 ۷ خرداد ۱۴۰۰: گزارش شرکت‌های دانش‌بنیان ۱۳۹۲ تا ۱۳۹۸ ارزش‌آفرین اعتماد، مدیا اد ۱۳۹۸، بهار ۱۳۹۸ و نیم‌سال اول ۱۳۹۸ متریکس، تپسل ۱۳۹۸، گزارش سهم بازار شبکه‌های تبلیغاتی و گزارش پلتفرم‌های موبایل‌مارکتینگ ۱۳۹۸ تردنیکس، گزارش‌های سالانه ۱۳۹۸ و ۱۳۹۹ باگ‌دشت، و گزارش وضعیت اینترنت ایران ۱۳۹۹ ابر دراک اضافه شدند.
 
+۱۰ تیر ۱۴۰۰: گزارش ۱۴۰۰ ایران‌اچ‌آر، گزارش‌های نیم‌سال اول ۱۳۹۹ و کل ۱۳۹۹ فرادرس، و شانزده گزارش از سال ۱۳۹۲ تا ۱۳۹۹ ایران‌تلنت اضافه شدند.
+
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
 |کافه‌بازار||
@@ -164,3 +166,24 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |ابر دراک|
 |---:|
 |[وضعیت اینترنت ایران - ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/derak-cloud-1399.pdf)|
+
+|ایران‌تلنت||
+|---:|---:|
+|[حقوق و دستمزد ۱۳۹۲](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1392-salary.pdf)||[حقوق و دستمزد ۱۳۹۴](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1394-salary.pdf)|
+|[حقوق و دستمزد مدیران ۱۳۹۴](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1394-salary-managers.pdf)||[حقوق و دستمزد ۱۳۹۷](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1397-salary.pdf)|
+|[بازار کار ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398.pdf)||[بازار کار ۱۳۹۸ - خدمات دیجیتال](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-digital-services.pdf)|
+|[بازار کار ۱۳۹۸ - خدمات دارویی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-pharmaceutical-services.pdf)||[بازار کار ۱۳۹۸ - کالاهای مصرفی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-fmcg.pdf)|
+|[بازار کار ۱۳۹۸ - نفتی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-oil.pdf)||[بازار کار ۱۳۹۸ - برنامه‌نویسی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-programming.pdf)|
+|[بازار کار ۱۳۹۸ - تولید و بهره‌برداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-production.pdf)||[بازار کار ۱۳۹۸ - حسابداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-accounting.pdf)|
+|[بازار کار ۱۳۹۸ - فروش](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-sales.pdf)||[بازار کار ۱۳۹۸ - مارکتینگ](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-marketing.pdf)|
+|[حقوق و دستمزد ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-salary.pdf)||[برندهای کارفرمایی محبوب ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-brands.pdf)|
+
+
+|فرادرس|
+|---:|
+|[نیم‌سال اول ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/faradars-1399-q1-q2.pdf)|
+|[سال ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/faradars-1399.pdf)|
+
+|ایران‌اچ‌آر|
+|---:|
+|[۱۴۰۰](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/iranhr-1400.pdf)|
