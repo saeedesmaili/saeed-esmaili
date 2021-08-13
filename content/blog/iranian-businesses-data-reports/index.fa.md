@@ -20,6 +20,8 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 
 ۲۶ اردیبهشت ۱۴۰۰: گزارش ۱۳۹۸ ایران‌رنتر (لندو)، گزارش ۱۳۹۸ پینکت، گزارش نیم‌سال اول ۱۳۹۹ ای‌سمینار، و گزارش ۲۰۲۱ تدکس تهران اضافه شد، و گزارش ۱۳۹۹ آپارات موقتاً به درخواست این شرکت حذف شد.
 
+۲۲ مرداد ۱۴۰۰: گزارش‌های تبلیغات ۱۳۹۹ کافه‌بازار، سالانه ۱۳۹۹ دیجی‌کالا، سالانه ۱۳۹۹ دیوار، سالانه ۱۳۹۹ یکتانت، سالانه ۱۳۹۹ تپسل، سالانه ۱۳۹۹ فیدیبو، سالانه ۱۳۹۹ مدیا اد، و سالانه ۱۳۹۸ و ۱۳۹۹ نوین‌هاب اضافه شدند.
+
 ![](images/2021-05-12-iranian-businesses-data-reports.png)
 
 |کافه‌بازار||
@@ -35,17 +37,20 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |[گلوبال ۲۰۱۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-2019-global.pdf)|[تابستان ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1398-q2.pdf)|
 |[پاییز ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1398-q3.pdf)|[سالانه ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1398.pdf)|
 |[بازی‌ها ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1398-games.pdf)|[کیوسک، نیم سال اول ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1399-q1-q2-kiosk.pdf)|
+|[تبلیغات ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/cafebazaar-1399-ads.pdf)||
 
 |دیوار|
 |---:|
-|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/divar-1398.pdf)|
+|[سالانه ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/divar-1398.pdf)|
 |[امور مشتریان، تابستان ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/divar-1399-customer-care.pdf)|
+|[سالانه ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/divar-1399.pdf)|
 
 |دیجی‌کالا|
 |---:|
 |[سالانه ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/digikala-1398.pdf)|
 |[نیم‌سال اول ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/digikala-1398-q1-q2-fa.pdf)|
 |[منابع انسانی ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/digikala-hr-1399.pdf)|
+|[سالانه ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/digikala-1399.pdf)|
 
 |گروه اسنپ|
 |---:|
@@ -98,10 +103,12 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[۱۳۹۷](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tapsell-1397.pdf)|
 |[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tapsell-1398.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/tapsell-1399.pdf)|
 
 |یکتانت|
 |---:|
 |[مهر ۱۳۹۷ تا شهریور ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/yektanet-1397-q3-q4-1398-q1-q2.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/yektanet-1399.pdf)|
 
 |گروه سرمایه‌گذاری بهمن|
 |---:|
@@ -123,6 +130,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[تیر ۱۳۹۷ تا تیر ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/mediaad-1397-q2-q3-q4-1398-q1.pdf)|
 |[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/mediaad-1398.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/mediaad-1399.pdf)|
 
 |تریبون|
 |---:|
@@ -187,3 +195,12 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |ایران‌اچ‌آر|
 |---:|
 |[۱۴۰۰](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/iranhr-1400.pdf)|
+
+|فیدیبو|
+|---:|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/fidibo-1399.pdf)|
+
+|نوین‌هاب|
+|---:|
+|[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/novinhub-1398.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/novinhub-1399.pdf)|
