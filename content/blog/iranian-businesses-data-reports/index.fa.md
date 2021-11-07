@@ -1,5 +1,5 @@
 ---
-title: "مجموعه گزارش‌های دیتایی کسب‌وکارهای ایرانی"
+title: "مجموعه گزارش‌های دیتایی کسب‌وکارهای ایرانی - آپدیت شهریور ۱۴۰۰"
 description: "بیزینس‌های ایرانی، از کافه‌بازار و دیوار و دیجی‌کالا تا اسنپ و علی‌بابا و حتی شرکت‌های کوچک‌تر هر سال گزارش‌های دیتایی از عملکرد خودشون و کاربرهاشون منتشر می‌کنن. مجموعه همه این گزارش‌ها رو یک‌جا گردآوری می‌کنم تا دسترسی بهشون راحت‌تر باشه."
 date: "2021-05-13"
 coverImage: "2021-05-12-iranian-businesses-data-reports.png"
@@ -13,6 +13,8 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 این صفحه با اضافه شدن گزارش‌های دیتایی جدید، آپدیت خواهد شد. 
 
 **آخرین آپدیت‌ها:**
+
+۳۰ شهریور ۱۴۰۰: گزارش سالانه ۱۳۹۹ متریکس، گزارش‌های جامع و گروه‌های شغلی متفاوت ۱۳۹۹ و ۱۴۰۰ ایران‌تلنت، و گزارش سالانه ۲۰۲۰ دیجی‌پی اضافه شدند.
 
 ۲۲ مرداد ۱۴۰۰: گزارش‌های تبلیغات ۱۳۹۹ کافه‌بازار، سالانه ۱۳۹۹ دیجی‌کالا، سالانه ۱۳۹۹ دیوار، سالانه ۱۳۹۹ یکتانت، سالانه ۱۳۹۹ تپسل، سالانه ۱۳۹۹ فیدیبو، سالانه ۱۳۹۹ مدیا اد، و سالانه ۱۳۹۸ و ۱۳۹۹ نوین‌هاب اضافه شدند.
 
@@ -160,6 +162,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[نیم‌سال اول ۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/metrix-1398-q1-q2.pdf)|
 |[بهار ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/metrix-1399-q1.pdf)|
+|[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/metrix-1399.pdf)|
 
 |ترندیکس|
 |---:|
@@ -185,6 +188,11 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |[بازار کار ۱۳۹۸ - تولید و بهره‌برداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-production.pdf)|[بازار کار ۱۳۹۸ - حسابداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-accounting.pdf)|
 |[بازار کار ۱۳۹۸ - فروش](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-sales.pdf)|[بازار کار ۱۳۹۸ - مارکتینگ](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1398-marketing.pdf)|
 |[حقوق و دستمزد ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-salary.pdf)|[برندهای کارفرمایی محبوب ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-brands.pdf)|
+|[بازار کار ۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399.pdf)|[بازار کار ۱۳۹۹-۱۴۰۰ - تولید و بهره‌برداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-production.pdf)|
+|[بازار کار ۱۳۹۹-۱۴۰۰ - برنامه‌نویسی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-programming.pdf)|[بازار کار ۱۳۹۹-۱۴۰۰ - فروش](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-sales.pdf)|
+|[بازار کار ۱۳۹۹-۱۴۰۰ - مارکتینگ](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-marketing.pdf)|[بازار کار ۱۳۹۹-۱۴۰۰ - حسابداری](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-accounting.pdf)|
+|[بازار کار ۱۳۹۹-۱۴۰۰ - کالاهای مصرفی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-fmcg.pdf)|[بازار کار ۱۳۹۹-۱۴۰۰ - خدمات دیجیتال](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-digital-services.pdf)|
+|[بازار کار ۱۳۹۹-۱۴۰۰ - نفتی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-1400-oil.pdf)|[بازار کار ۱۳۹۹ - خدمات دارویی](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/irantalent-1399-pharmaceutical-services.pdf)|
 
 
 |فرادرس|
@@ -204,3 +212,7 @@ coverImage: "2021-05-12-iranian-businesses-data-reports.png"
 |---:|
 |[۱۳۹۸](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/novinhub-1398.pdf)|
 |[۱۳۹۹](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/novinhub-1399.pdf)|
+
+|دیجی‌پی|
+|---:|
+|[۲۰۲۰](https://github.com/saeedesmaili/iranian-businesses-data-reports/raw/main/reports/digipay-2020.pdf)|
